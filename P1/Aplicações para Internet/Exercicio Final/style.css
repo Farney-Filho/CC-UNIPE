@@ -1,0 +1,66 @@
+p, table{
+    font: @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap')
+    ;
+}
+
+h1, h2 {
+    font: @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');;
+}
+
+header{
+
+    background-image: url(cofee.jpg);
+    background-position: center;
+    height: 600px;
+    width: ;
+}
+
+#titulo{
+    color: white;
+    display: inline-block;
+    position: relative;
+    margin-top: 500px;
+    margin-left: 40px;
+    background-color: #BF571B99;
+    padding: 0px;
+    
+}
+
+.texto{
+position: relative;
+display: block;
+width: 70%
+}
+
+th {
+    width:;
+    background-color: #591902;
+    color: white;
+    
+}
+
+tr{
+    background-color: #F29D35;
+    color: #732c02;
+}
+
+.tipo {
+    font-weight: bold;
+}
+
+img{
+    width: 300px;
+    border-radius: 20px;
+    position: static;
+    box-shadow: #591902;
+    display: inline-block;
+
+}
+
+hr{
+    width: 25%;
+    }
+
+p{
+    margin:0;
+}

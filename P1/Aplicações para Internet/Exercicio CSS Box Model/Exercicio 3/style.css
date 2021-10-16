@@ -1,0 +1,23 @@
+body{
+    background-color: darkgray;
+}
+#foto{
+    width:400px;
+    }
+#divdafoto{
+    background-color: white;
+}
+
+div{
+    background-color: white;
+    width: 400px;
+    padding-left: 20px;
+}
+
+#titulo{
+    color: darkblue;
+    border-left: dashed;
+    border-bottom: dashed;
+    border-color: lightgray;
+    margin: 0;
+}

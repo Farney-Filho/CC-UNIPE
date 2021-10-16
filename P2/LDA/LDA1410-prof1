@@ -1,0 +1,38 @@
+/*
+Ler 7 números reais em um vetor. Se um número zero for digitado, peça outro número.
+Apresente ao final a soma dos positivos e a quantidade de negativos.
+Caso não haja números positivos, avise. Faça o mesmo com negativos.
+*/
+#include <stdio.h>
+int main (void){
+	float numeros[7];
+	float soma_pos = 0;
+	int qtd_neg = 0;
+	int x;
+	
+	for(x = 0; x < 7; x++){
+		printf("Digite o numero: ");
+		scanf("%f", &numeros[x]);
+		if(numeros[x] == 0){
+			printf("Zero nao e permitido!");
+			x--;
+			continue;
+		}else if (numeros[x] > 0){
+			soma_pos += numeros[x];
+		}else{
+			qtd_neg++;
+		}		
+	}
+	if(qtd_neg == 0){
+		printf("Nao ha numeros negativos");	
+	}else{
+		printf("Ha %d numeros negativos",qtd_neg);
+	}
+	if(soma_pos == 0){
+		printf("Nao ha numeros positivos");
+	}else{
+		printf("A soma dos numeros positivos eh %f", soma_pos);
+	}
+	
+	return 0;
+}

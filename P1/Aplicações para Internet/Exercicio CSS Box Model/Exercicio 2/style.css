@@ -1,0 +1,23 @@
+*{
+    background-color: darkgray;
+    border-color: darkcyan;
+    }
+
+h1{
+    background-color: gray;
+    border-style: dashed;
+    margin: 30px 30px 50px 30px        
+}
+li{
+    padding: 50px 0px 0px 50px;
+    border-style: dashed;
+    margin-bottom: 5px;
+    
+}
+#professor{
+border-left: solid;
+border-bottom: solid;
+margin: 30px 00px 10px 30px;
+border-color: darkcyan;
+padding: 0px 0px 10px 10px;
+}

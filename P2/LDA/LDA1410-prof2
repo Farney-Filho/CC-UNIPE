@@ -1,0 +1,45 @@
+/*
+Leia o preço de 10 produtos e jogue em um array.
+Em seguida, lendo tal array, apresente:
+a) a quantidade de produtos com valor inferior a $50
+b) entre 50 e 80
+c) maior que 80
+d) a média de preço 
+*/
+#include <stdio.h>
+#include <locale.h>
+int main (void){
+	setlocale(LC_ALL, "portuguese");
+	float precos[10];
+	int i;
+	int qtd_menor_50 = 0;
+	int qtd_entre_50e80 = 0;
+	int qtd_maior_80 = 0;
+	float soma = 0;
+	float media;
+	for(i = 0; i < 10; i++){
+		printf("Digite o preço: ");
+		scanf("%f", &precos[i]);
+		if(precos[i] <= 0){
+			printf("Digite um preço válido!");
+			i--;
+		}
+	}
+	for(i=0; i<10; i++){
+		if(precos[i]>0 && precos[i] < 50){
+			qtd_menor_50++;
+		}else if (precos[i] >= 50 && precos[i] <= 80){
+			qtd_entre_50e80++;
+		}else{
+			qtd_maior_80++;
+		}
+		soma += precos[i];
+	}
+	media = soma/10;
+	printf("Há %d produtos com preço menor que $50",qtd_menor_50);
+	printf("\nHá %d produtos com preco entro $50 e 80", qtd_entre_50e80);
+	printf("\nE há %d produtos com preço maior que $80", qtd_maior_80);
+	printf("\n A MÉDIA de preços é: %f", media);
+	
+	return 0;
+}

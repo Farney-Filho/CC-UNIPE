@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main()
+{
+    char faixaEtaria;
+    
+    printf("\nA - Criança\n");
+    printf("B - Adolescente\n");
+    printf("C - Jovem adulto\n");
+    printf("D - Adulto\n");
+    printf("E - Idoso\n\n");
+    printf("Insira sua categoria de faixa etária:");
+    scanf(" %c",&faixaEtaria);
+
+switch(faixaEtaria)
+{
+    case 'a':
+    case 'A':
+        printf("Criança: até 12 anos.");
+        break;
+    case 'b':
+    case 'B':
+        printf("Adolescente: 13 a 17 anos.");
+        break;
+    case 'c':
+    case 'C':
+        printf("Jovem adulto: 18 a 23 anos.");
+        break;
+    case 'd':
+    case 'D':
+        printf("Adulto: 24 a 70 anos.");
+        break;
+    case 'e':
+    case 'E':
+        printf("Idoso: Acima de 71 anos.");
+        break;
+    default:
+        printf("Categoria inválida.");
+        
+}
+
+    return 0;
+}
