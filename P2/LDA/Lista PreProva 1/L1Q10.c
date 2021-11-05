@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main ()
-{
+{ // QUESTÃO LIDA INCORRETAMENTE! KKKKKKKKK
 
     int num[10], impares, pares, contpar=0, contimpar=0;
 
